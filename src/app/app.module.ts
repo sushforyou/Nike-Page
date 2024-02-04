@@ -11,6 +11,7 @@ import { OfferComponent } from './offer/offer.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { ServiceComponent } from './service/service.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './footer/footer.component';
     OfferComponent,
     SubscribeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,

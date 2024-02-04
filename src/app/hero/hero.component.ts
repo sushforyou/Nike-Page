@@ -7,4 +7,7 @@ import { statistics } from '../constants/constants'
 })
 export class HeroComponent {
  stats = statistics;
+ handleClick() {
+  
+ }
 }
