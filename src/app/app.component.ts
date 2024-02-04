@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-
+import {navLinks} from './constants/constants'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'nike_landing_page';
+  navs = navLinks;
+  title = 'Nike';
 }

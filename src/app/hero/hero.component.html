@@ -1,3 +1,31 @@
-<section id="home" class="h-96 border bg-red-600">
-    <h2>  Home SECTION </h2>
+<section
+id='home'
+class='w-full flex xl:flex-row flex-col justify-start min-h-screen gap-10 max-container'
+>
+<div class='relative xl:w-2/5 flex flex-col justify-center items-start w-full  max-xl:padding-x pt-28'>
+  <p class='text-xl font-montserrat text-red-500'>
+    Our Summer collections
+  </p>
+
+  <h1 class='mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold'>
+    <span class='xl:bg-white xl:whitespace-nowrap relative z-10 pr-10'>
+      The New Arrival
+    </span>
+    <br />
+    <span class='text-red-500 inline-block mt-3'>Nike</span> Shoes
+  </h1>
+  <p class='font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm'>
+    Discover stylish Nike arrivals, quality comfort, and innovation for
+    your active life.
+  </p>
+  <button class="flex justify-center items-center gap-2 px-7 py-4 border text-lg text-white leading-none rounded-full bg-red-500 border-red-500" >
+    Shop Now <img src="../../assets/icons/arrow-right.svg" alt="arrow-right" class="ml-2 rounded-full w-5 h-5"></button>
+
+  <div class='flex justify-start items-start flex-wrap w-full mt-20 gap-16'>
+    <div *ngFor="let sts of stats">
+        <p class="text-4xl font-palanquin font-bold">{{sts.value}}</p>
+        <p class='leading-7 font-montserrat text-slate-gray'>{{sts.label}}</p>
+    </div>
+  </div>
+</div>
 </section>

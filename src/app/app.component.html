@@ -1,1 +1,21 @@
-<app-header></app-header>
+<main className='relative'>
+    <header class="padding-x py-8 z-10 w-full absolute">
+        <nav class="flex justify-between items-center max-container">
+            <a href="/"><img src="../../assets/images/header-logo.svg" alt="logo" width="130" height="29"/></a>
+            <ul class="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
+                <li *ngFor="let nav of navs"> <a [routerLink] = "['/']"  fragment="{{nav.href}}"
+                    class="font-montserrat leading-normal text-lg text-slate-gray"> {{nav.label}} </a></li>
+            </ul>
+            <div>
+                <img src="../../assets/icons/hamburger.svg" alt="Humberger"  width="25" height="25" class="hidden max-lg:block"/>
+            </div>
+        </nav>
+    </header>
+    <section class="xl:padding-l wide:padding-r padding-b">
+        <app-hero></app-hero>
+    </section>
+    
+    <!-- <app-popular></app-popular>
+    <app-about></app-about>
+    <app-contact></app-contact> -->
+    </main>
