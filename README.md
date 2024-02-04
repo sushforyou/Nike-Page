@@ -1,4 +1,4 @@
-# Deployed at [Sushant's Nike Page] (https://sushant-nike-page.vercel.app/)
+# Deployed at [Sushant's Nike Page](https://sushant-nike-page.vercel.app/)
 # NikeLandingPage
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
